@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="s.css">
+    <link rel="stylesheet" href="r.css">
+    <title>Detection - Phishing prevention</title>
+</head>
+
+<body>
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="https://designhub.co/wp-content/uploads/2020/08/logo1-11.jpg" alt="logo"></div>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="rightNav v-class-resp">
+            <!-- <input type="text" name="search" id="search"> -->
+            <!-- <a href="https://www.google.com/" target="_blank"><button class="btn btn-sm">Search</button></a>    -->
+            <form action="https://www.google.com/search" method="get">
+                <input type="text" id="search" name="q" required>
+                <!-- <input type="text" name="search" id="search"> -->
+                <button type="submit">Search</button>
+              </form>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section class="background firstSection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big">The Phishing Detection is here</p>
+                <p class="text-small">In this world of 7 billion people we need to educate all of them about phishing. This is the
+                    future approach to prevent ourselves from fraud attacks.</p>
+                <div class="buttons">
+                    <a href="https://en.wikipedia.org/wiki/Phishing" target="_blank"> <button class="btn">Learn...</button> </a>
+                    <div class="container">
+                        <h1>Analyze Link</h1>
+                        <p>Enter a URL to analyze:</p>
+                        <form method="post" action="link_analysis.php"> <!-- Specify the action attribute -->
+                            <input type="text" name="linkInput" placeholder="Paste your URL here">
+                            <button type="submit">Analyze</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="secondHalf">
+                <img src="https://designhub.co/wp-content/uploads/2020/08/logo1-11.jpg" alt="Laptop Image">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="paras">
+        <p class="sectionTag text-big">Don't worry any more</p>
+        <p class="sectionSubTag text-small">Technological solutions also play a vital role in phishing detection. Utilizing advanced email filters and security software that employ machine learning algorithms to identify phishing patterns can proactively block many SUSPICIOUS attempts from reaching users' inboxes.
+
+            Combining user vigilance with technology-driven defenses allows for a more robust approach to phishing detection, enabling individuals and organizations to mitigate the risks posed by these ever-evolving cyber threats. </p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/900x900/?coding,apple" alt="laptop image" class="imgFluid">
+        </div>
+    </section>
+
+    <section class="section section-left" id="about">
+        <div class="paras">
+        <p class="sectionTag text-big">Erradicating phishing</p>
+        <p class="sectionSubTag text-small">The positive effects extend to the realm of communication and business interactions. Without the fear of phishing emails and messages, people would feel more at ease engaging online, fostering trust and better collaboration. Moreover, businesses would experience fewer disruptions and reduced financial losses due to phishing attacks, leading to improved operational efficiency and continuity.</p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/900x900/?coding,html" alt="laptop image" class="imgFluid">
+        </div> 
+    </section>
+
+    
+    <section class="section" id="services">
+        <div class="paras">
+        <p class="sectionTag text-big">No more phishing</p>
+        <p class="sectionSubTag text-small">A wide range of technical approaches are available to prevent phishing attacks reaching users or to prevent them from successfully capturing sensitive information.our site helps to let you know that the link you give is a genuine website or a phisher website designed to steal your data.</p>
+        
+        <p class="sectionSubTag text-small"> 
+            To avoid phishing attempts, people can modify their browsing habits and be cautious of emails claiming to be from a company asking to "verify" an account. It's best to contact the company directly or manually type in their website address rather than clicking on any hyperlinks in suspicious emails.
+         </p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/900x900/?coding,javascript" alt="laptop image" class="imgFluid">
+        </div>
+    </section>
+     
+    <section class="contact" id="contact">
+        <h1 class="text-center" style="color: black;">Contact Us</h1>
+        <div class="form">
+            <form action="form.php" method="POST">
+                <input class="form-input" type="text" name="name" id="name" placeholder="Enter Your name">
+                <input class="form-input" type="email" name="email" id="email" placeholder="Enter Your email">
+                <textarea class="form-input" name="text" id="text" cols="30" rows="10" placeholder="Message"></textarea>
+                <button type="submit" class="btn btn-sm btn-dark">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="background">
+        <p class="text-footer">
+            Copyright &copy; 2027 - www.iEducate.com - All rights reserved
+        </p>
+    </footer>
+    <script src="resp.js"></script>
+
+</body>
+
+</html>

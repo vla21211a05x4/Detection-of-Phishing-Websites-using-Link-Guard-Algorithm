@@ -1,0 +1,37 @@
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .link-container {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .link {
+            color: #3366cc;
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        .status {
+            font-size: 18px;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .status-SUSPICIOUS {
+            background-color: #ff4d4d;
+            color: #fff;
+        }
+
+        .status-safe {
+            background-color: #5cb85c;
+            color: #fff;
+        }
+    </style>

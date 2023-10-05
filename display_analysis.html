@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>URL Analysis Results</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <?php
+            if (isset($_GET['analysisResult'])) {
+                $analysisResult = $_GET['analysisResult'];
+                $phishingStatus = $analysisResult === "SUSPICIOUS" ? "red" : "green";
+                echo "<p>URL Analysis:</p>";
+                echo "<pre style='color: $phishingStatus;'>$analysisResult</pre>";
+            } else {
+                echo "<p>No analysis result found.</p>";
+            }
+        ?>
+        <button onclick="window.history.back()">Back to Analysis</button>
+    </div>
+</body>
+</html>
